@@ -1,3 +1,8 @@
+[![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/saengate/postgres)](https://github.com/saengate/postgres/releases/latest)
+[![GitHub](https://img.shields.io/github/license/saengate/postgres)](LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/saengate/postgres)](https://github.com/saengate/postgres/graphs/contributors)
+[![Build Status](https://travis-ci.org/saengate/postgres.svg?branch=master)](https://travis-ci.org/saengate/postgres)
+
 ## Descripción PostgreSQL
 
 La documentación oficial sobre el rol que instala postgres se encuentra en:

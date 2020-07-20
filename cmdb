@@ -92,7 +92,7 @@ run_v(){
         docker run -v $(pwd)/ansible:/root/ansible $container_ports --rm -it --name $container $container;
     else
         echo "${GREEN}Inciando contenedor $container con volumen a carpeta ansible y el proyecto ${NC}";
-        docker run -v $(pwd)/ansible:/tmp/ansible -v $(pwd):/webapps/project $container_ports --rm -it --name $container $container;
+        docker run -v $(pwd)/ansible:/tmp/ansible -v $(pwd):/webapps/django $container_ports --rm -it --name $container $container;
     fi
 }
 
@@ -137,7 +137,7 @@ while [ "$1" != "" ]; do
         -r | --run )            run
                                 exit
                                 ;;
-        -rv | --run_v )         run_v $project
+        -rv | --run_v )         run_v $django
                                 exit
                                 ;;
         -ve | --vault_encrypt ) vault_encrypt $2
